@@ -1,0 +1,25 @@
+/* .left .profileimg{
+    height: 15vh;  
+    width:50%;
+    border-radius: 50%;
+    background-color: aliceblue;
+} */
+.left .navigation{
+   margin-top: 4rem;
+}
+.left{
+    background-color: #608BC1;
+    /* margin:1.2rem 0 ;
+    border-radius: 1.5rem; */
+    height:100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* margin-top: 4rem; */
+}
+/* .left #profile{
+    margin-bottom:1.2rem;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+} */

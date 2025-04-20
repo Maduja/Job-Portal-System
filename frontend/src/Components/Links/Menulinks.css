@@ -1,0 +1,15 @@
+.links{
+    text-decoration: none;
+    margin:0 0.4rem;
+    padding:0.2rem 0.9rem;
+    font-size: 1.2rem;
+    color:#063970;
+    font-weight: 600;
+    border-right: 1px solid #063970;
+}
+
+.links:hover{
+    background-color: #063970;
+    color: white;
+    border-radius:.5rem;
+}

@@ -1,0 +1,13 @@
+#empinfo .row{
+    margin-top: 1.5rem;
+    gap: 3rem;
+}
+#empinfo .e-card h5{
+    font-weight: bold;
+}
+ .e-card{
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    background-color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,152 @@
+/* Employerregister.css */
+.employer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 102vh;
+  background: linear-gradient(to bottom, #e3f2fd, #90caf9);
+  padding: 20px;
+}
+
+.employer-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+  height: 80vh;
+}
+
+.form-card-employee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  max-width: 900px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.form-card-employee:hover {
+  transform: scale(1.02);
+}
+
+form h2 {
+  text-align: center;
+  color: #063970;
+  margin-bottom: 20px;
+}
+
+.form-content-employee {
+  display: flex;
+  gap: 20px;
+  width: 50vw;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.image-side-employee {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Matches the form height */
+  
+}
+
+.image-side-employee img {
+  width: 25vw;
+  height: 70vh; /* Matches the form height */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: -50px;
+}
+
+.form-fields {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-left, .form-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+form button {
+  width: 70%;
+  padding: 10px;
+  background-color: #063970;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: -30px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: #0456a6;
+}
+
+.success {
+  color: green;
+  background-color: #dfd;
+  border: 1px solid green;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  background-color: #fdd;
+  border: 1px solid red;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-content {
+      flex-direction: column;
+  }
+}

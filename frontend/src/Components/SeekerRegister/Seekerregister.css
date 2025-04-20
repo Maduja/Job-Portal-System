@@ -1,0 +1,167 @@
+/* Seekerregister.css */
+.seeker-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 102vh;
+  background: linear-gradient(to bottom, #f3e5f5, #ce93d8);
+  padding: 20px;
+}
+
+.seeker-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+  height: 80vh;
+}
+
+.form-card-seeker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  max-width: 900px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.form-card-seeker:hover {
+  transform: scale(1.02);
+}
+
+form h2 {
+  text-align: center;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+}
+
+.form-content-seeker {
+  display: flex;
+  gap: 20px;
+  width: 50vw;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.image-side-seeker{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Matches the form height */
+}
+
+.image-side-seeker img {
+  width: 27vw;
+  height: 60vh; /* Matches the form height */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: -120px;
+}
+
+.form-fields {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-left, .form-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #8e24aa;
+  box-shadow: 0 0 5px rgba(142, 36, 170, 0.5);
+}
+
+form button {
+  width: 70%;
+  padding: 10px;
+  background-color: #6a1b9a;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: -45px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+  background-color: #8e24aa;
+}
+
+.success {
+  color: green;
+  background-color: #dfd;
+  border: 1px solid green;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  background-color: #fdd;
+  border: 1px solid red;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .form-content {
+    gap: 10px;
+  }
+
+  .image-side img {
+    width: 100%;
+    height: auto;
+  }
+}

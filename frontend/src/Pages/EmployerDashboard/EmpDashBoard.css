@@ -1,0 +1,11 @@
+/* #employer .subemp{
+    width:95%;
+    margin:0 auto;
+} */
+#employer .row{
+    margin: 0;
+}
+#employer{
+    background-color: #CBDCEB;
+    height: 100vh;
+}

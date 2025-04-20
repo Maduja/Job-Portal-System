@@ -1,0 +1,97 @@
+.leftcontent {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .leftcontent .sub {
+    margin: 4rem auto;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .leftcontent .sub h1 {
+    color: #063970;
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: slideIn 1.2s ease;
+  }
+  
+  .leftcontent .sub p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 1rem 0;
+  }
+  
+  .leftcontent .animated-button {
+    padding: 0.7rem 3.5rem;
+    border: none;
+    border-radius: 2rem;
+    background: linear-gradient(135deg, #13467e, #1a73e8);
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .leftcontent .animated-button:hover {
+    background: linear-gradient(135deg, #063970, #0e4da8);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+  }
+  
+  .leftcontent .animated-button .icon {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .leftcontent .animated-button:hover .icon {
+    transform: translateX(5px);
+  }
+  
+  .leftcontent .sub .icon {
+    width: 20px;
+    transition: width 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .leftcontent .sub {
+      margin: auto;
+    }
+  
+    .leftcontent .sub h1 {
+      font-size: 2rem;
+    }
+  
+    .leftcontent .animated-button {
+      padding: 0.5rem 2.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

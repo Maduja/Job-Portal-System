@@ -1,0 +1,139 @@
+/* Base Styling */
+.left {
+    background-color:#1e293b; 
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #E5E7EB; 
+    font-family: "Arial", sans-serif; 
+    font-size: 1rem; 
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); 
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.left .navigation {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+
+.left .navigation .icon {
+    color: #95b588; 
+    font-size: 1.5rem; 
+    margin-right: 0.5rem;
+}
+
+.left .navigation .text {
+    color: #E5E7EB; 
+    font-size: 1rem;
+}
+
+.left .navigation .signout {
+    color: #fff0ec; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.left .navigation .signout:hover {
+    color: #0f1f35;
+    background-color: #fff0ec;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .left {
+        height: auto;
+        padding: 1rem;
+        font-size: 0.9rem; 
+    }
+
+    .left .navigation {
+        margin-top: 2rem;
+        gap: 0.75rem;
+    }
+
+    .left .navigation .icon {
+        font-size: 1.2rem;
+    }
+
+    .left .navigation .signout {
+        font-size: 0.9rem;
+        gap: 0.4rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .left {
+        height: auto;
+        padding: 0.5rem;
+        display: block; 
+    }
+
+    .left .navigation {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .left .navigation .nav-item {
+        display: block; 
+        justify-content: flex-start; 
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .left .navigation .icon {
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
+
+    .left .navigation .text {
+        font-size: 0.85rem;
+        text-align: left;
+        display: inline-block;
+        margin-top: 0.25rem;
+    }
+
+    .left .navigation .signout {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.6rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.left:hover {
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.left .navigation .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.left .navigation .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.left .navigation .nav-item.active {
+    background-color: #1a2b4d; 
+}
+
+.left .navigation .signout {
+    align-self: center; 
+}

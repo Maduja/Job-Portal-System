@@ -1,0 +1,12 @@
+.applicationtable select {
+  padding: 6px 10px;
+  font-size: 14px;
+  background-color: #608BC1;
+  border: 1px solid #ccc;
+  color: white;
+  border-radius: 14px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
